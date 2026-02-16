@@ -1,0 +1,68 @@
+
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pyscript.net/releases/2025.7.3/core.css" />
+    <script type="module" src="https://pyscript.net/releases/2025.7.3/core.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Roblox Account Creator</title>
+    <style>
+      body {
+          font-family: Arial, sans-serif;
+          background-image: url("https://sm.ign.com/t/ign_ap/news/r/roblox-dev/roblox-developers-conference-2024-everything-announced_ypgp.1280.jpg");
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+          min-height: 100vh;
+      }
+      .container {
+          margin-top: 80px;
+          margin-left: 60px;
+          max-width: 520px;
+          background: rgba(94, 94, 94, 0.92);
+          padding: 40px;
+          border-radius: 16px;
+          box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
+          text-align: center;
+      }
+      h1 {
+          margin-bottom: 20px;
+          font-weight: 600;
+          color: #c5c5c7;
+      }
+      input {
+        width: 100%;
+      }
+      #result {
+          margin-top: 15px;
+          font-weight: bold;
+          padding: 10px;
+          border-radius: 8px;
+          background: #f1f1f1;
+      }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <h1>ROBLOX</h1>
+        <p class="description">
+        Create your account in Roblox
+        </p>
+        <input id="username" type="text" class="form-control mb-3" placeholder="Username">
+        <input id="password" type="text" class="form-control mb-3" placeholder="Password">
+        <button class="btn btn-primary w-100" py-click="createacc">Create</button>
+        <p id="result"></p>
+        <small class="text-light d-block mt-3">
+        Username: at least 7 characters <br>
+        Password: at least 10 characters, 1 letter and 1 number
+        </small>
+    </div>
+    </div>
+    <script type="py" src="main.py"></script>
+</body>
+</html>
+
+
